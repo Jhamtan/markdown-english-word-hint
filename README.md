@@ -1,6 +1,21 @@
 # markdown-english-word-hint README
 
-This is the README for your extension "markdown-english-word-hint". After writing up a brief description, we recommend including the following sections.
++ Provide English word hint in Markdown file.
++ You can also modify the settings to activate this extension in other types of files.
+
+Because the Markdown code prompt feature is disabled by default, you need to make settings in `settings.json` to enable the extension functionality.
+
+Here is an example:
+
+``` json
+"[markdown]": {
+  "editor.quickSuggestions": {
+    "comments": "on",
+    "strings": "on",
+    "other": "on"
+  }
+}
+```
 
 ## Features
 

@@ -1,17 +1,104 @@
 {
-  "name": "markdown-english-word-hint",
+  "name": "markdownenglishwordhint",
   "displayName": "Markdown English Word Hint",
-  "description": "",
   "version": "0.0.1",
+  "publisher": "jhamtan",
+  "description": "Provide English word hint in Markdown file.",
+  "author": {
+    "name": "jhamtan"
+  },
+  "categories": ["Other"],
   "engines": {
     "vscode": "^1.79.0"
   },
-  "categories": [
-    "Other"
-  ],
+  "bugs": {
+    "url": "https://github.com/jhamtan/markdownenglishwordhint/issues",
+    "email": "Jhamtan@outlook.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jhamtan/markdownenglishwordhint.git"
+  },
+  "homepage": "https://github.com/jhamtan/markdownenglishwordhint/blob/main/README.md",
   "activationEvents": ["onStartupFinished"],
   "main": "./dist/extension.js",
   "contributes": {
+    "configuration": [
+      {
+        "title": "MarkdownEnglishWordHint",
+        "properties": {
+          "MarkdownEnglishWordHint.activation": {
+            "type": "object",
+            "default": {
+              "html": false,
+              "java": false,
+              "javascript": false,
+              "javascriptreact": false,
+              "json": false,
+              "typescript": false,
+              "typescriptreact": false,
+              "vue": false,
+              "vue-html": false,
+              "xml": false
+            },
+            "properties": {
+              "html": {
+                "type": "boolean",
+                "default": false,
+                "description": "Activate this extension in the HTML file."
+              },
+              "java": {
+                "type": "boolean",
+                "default": false,
+                "description": "Activate this extension in the JAVA file."
+              },
+              "javascript": {
+                "type": "boolean",
+                "default": false,
+                "description": "Activate this extension in the JavaScript file."
+              },
+              "javascriptreact": {
+                "type": "boolean",
+                "default": false,
+                "description": "Activate this extension in the JavaScript JSX file."
+              },
+              "json": {
+                "type": "boolean",
+                "default": false,
+                "description": "Activate this extension in the JSON file."
+              },
+              "typescript": {
+                "type": "boolean",
+                "default": false,
+                "description": "Activate this extension in the TypeScript file."
+              },
+              "typescriptreact": {
+                "type": "boolean",
+                "default": false,
+                "description": "Activate this extension in the TypeScript JSX file."
+              },
+              "vue": {
+                "type": "boolean",
+                "default": false,
+                "description": "Activate this extension in the Vue file."
+              },
+              "vue-html": {
+                "type": "boolean",
+                "default": false,
+                "description": "Activate this extension in the Vue HTML file."
+              },
+              "xml": {
+                "type": "boolean",
+                "default": false,
+                "description": "Activate this extension in the XML file."
+              }
+            },
+            "additionalProperties": false,
+            "markdownDescription": "Configure the language for activating the extension."
+          }
+        }
+      }
+    ]
   },
   "scripts": {
     "vscode:prepublish": "npm run package",
