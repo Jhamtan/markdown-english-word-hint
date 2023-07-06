@@ -9,19 +9,15 @@ interface DictionaryItem {
 const dictionaryData: DictionaryItem = {};
 
 function loadData(): void {
-  let arr = [];
   for (let i = 0; i < 11; i++) {
-    const dictionary = require(`./data/dictionary${i}`).dictionary;
-    arr.push(dictionary);
-  }
-  arr.forEach(item => {
-    for (let key in item) {
-      dictionaryData[key] = item[key];
+    const dictionary = require(`./data/dictionary${i}.json`);
+    for (let key in dictionary) {
+      dictionaryData[key] = dictionary[key];
     }
-  });
+  }
 }
 
-const exchange = require('./data/exchange').exchange;
+const exchange = require('./data/exchange.json');
 
 function replaceChange(change: string): string | void {
   if (!change) {return;}
