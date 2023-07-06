@@ -2,9 +2,9 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 
-import { items } from './load-data';
+import { getCompletionItem } from './load-data';
 
-const wordCompletionItems = items;
+const wordCompletionItems = getCompletionItem();
 let DOCUMENT_SELECTOR: Array<string> = ['markdown'];
 
 function changeDocumentSelector() {

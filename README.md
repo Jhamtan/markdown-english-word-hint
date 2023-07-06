@@ -1,4 +1,4 @@
-# markdown-english-word-hint README
+# Markdown English Word Hint
 
 + Provide English word hint in Markdown file.
 + You can also modify the settings to activate this extension in other types of files.
