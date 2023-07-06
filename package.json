@@ -8,7 +8,7 @@
     "name": "jhamtan"
   },
   "categories": ["Other"],
-  "icon": "./src/images/logo-384x384.png",
+  "icon": "images/logo-384x384.png",
   "engines": {
     "vscode": "^1.79.0"
   },
