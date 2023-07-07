@@ -13,14 +13,14 @@
     "vscode": "^1.79.0"
   },
   "bugs": {
-    "url": "https://github.com/jhamtan/markdownenglishwordhint/issues",
+    "url": "https://github.com/jhamtan/markdown-english-word-hint/issues",
     "email": "Jhamtan@outlook.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jhamtan/markdownenglishwordhint.git"
+    "url": "https://github.com/jhamtan/markdown-english-word-hint.git"
   },
-  "homepage": "https://github.com/jhamtan/markdownenglishwordhint/blob/main/README.md",
+  "homepage": "https://github.com/jhamtan/markdown-english-word-hint/blob/main/README.md",
   "activationEvents": ["onStartupFinished"],
   "main": "./dist/extension.js",
   "contributes": {
