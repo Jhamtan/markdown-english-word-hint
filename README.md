@@ -5,7 +5,7 @@
 
 Because the Markdown code prompt feature is disabled by default, you need to make settings in `settings.json` to enable the extension functionality.
 
-Here is an example:
+For example:
 
 ``` json
 "[markdown]": {
@@ -19,68 +19,34 @@ Here is an example:
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+在 `settings.json` 设置开启 Markdown 键入时自动显示建议后，在键入英文字符时提供英语单词建议。
 
-For example if there is an image subfolder under your extension project workspace:
++ Provide English word hint in Markdown file.
 
-\!\[feature X\]\(images/feature-x.png\)
+![English word hint](images/example.gif)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+词典数据源于 [ECDICT](https://github.com/skywind3000/ECDICT)，根据 `ecdict.csv` 进行处理后得到包含四十万多个单词的字典，数据较大，扩展加载需要一定时间。
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+|   键名称  |   说明    |
+| :------: | :-------: |
+| MarkdownEnglishWordHint.activation | Configure the language for activating the extension. |
 
-For example:
+![Extension Settings](images/configure.png)
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+勾选对应选项，重启 VSCode 即可在对应文件中也激活此扩展，在键入英文字符时提供建议。
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
++ `vscode.CompletionItem` 按照字符顺序排序（从a到z），无法按照词频排序。
++ 在输入中文/数字时，紧接着输入英文字符不会出现提示（在中文字符/数字中间输入英文字符也不会出现提示）。需要键入一个空格再输入英文字符才会出现提示。
++ 部分单词音标显示错误。
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### 0.1.0
 
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+Visual Studio Code扩展-Markdown 英语单词提示初版发布。
 
 ---
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**

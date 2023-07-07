@@ -1,7 +1,7 @@
 {
   "name": "markdownenglishwordhint",
   "displayName": "Markdown English Word Hint",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "jhamtan",
   "description": "Provide English word hint in Markdown file.",
   "author": {

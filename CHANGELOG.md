@@ -1,9 +1,9 @@
 # Change Log
 
-All notable changes to the "markdown-english-word-hint" extension will be documented in this file.
+## [0.1.0] - 2023-07-07
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
+### Added
 
 - Initial release
+- 实现基本功能
+- 添加用户设置，以在其他文件中也激活此扩展
