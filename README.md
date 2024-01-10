@@ -45,6 +45,10 @@ For example:
 
 ## Release Notes
 
+### 0.1.1
+
+更正996个单词音标错误，将所有单词由多个文件合并到一个文件。
+
 ### 0.1.0
 
 Visual Studio Code扩展-Markdown 英语单词提示初版发布。
